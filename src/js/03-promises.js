@@ -20,10 +20,10 @@ function submitForm(e) {
 
     createPromise(position, delayEl)
       .then(({ position, delayEl }) => {
-        Notify.success(`Fulfilled promise ${position} in ${delayEl}ms`);
+        Notify.success(`Fulfilled promise ${position} in ${delay} ms`);
       })
       .catch(({ position, delayEl }) => {
-        Notify.failure(`Rejected promise ${position} in ${delayEl}ms`);
+        Notify.failure(`Rejected promise ${position} in ${delay} ms`);
       });
   }
 }
